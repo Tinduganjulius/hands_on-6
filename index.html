@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>One Piece</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+@keyframes logo{
+10% {transform: rotateY(100deg);}
+100% {transform: rotateY(360deg);}
+
+}
+.style6{
+
+border-style: solid;
+border-width: 4px;
+vertical-align: top;
+
+margin: auto 0px auto 3px;
+animation: 10s logo infinite;
+border-radius:50%;
+background-color: white;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color:	#87CEFA;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #FFD700;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; background-size: cover;
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes slideshow {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body background="bg.jpg">
+
+  <table>
+  <tr>
+  <td>
+  <img src="logo1.png" class="style6" width="100" height="100">
+  </td>
+  <td>
+  <h1> One Piece </h1>
+  </td>
+  </tr>
+  </table>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" class="active">Home</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 14</div>
+  <img src="image1.jpg" style="width:100%">
+  <div class="text">Straw Hat Pirates</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 14</div>
+  <img src="image2.jpg" style="width:100%">
+  <div class="text">Straw Hat Pirates</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 14 </div>
+  <img src="image3.jpg" style="width:100%">
+  <div class="text">Straw Hat Pirates</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 14 </div>
+  <img src="image4.jpg" style="width:100%">
+  <div class="text">Straw Hat Pirates</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5 / 14 </div>
+  <img src="image5.jpg" style="width:100%">
+  <div class="text">Straw Hat Luffy (Captain)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">6 / 14 </div>
+  <img src="image6.jpg" style="width:100%">
+  <div class="text">Roronoa Zoro (Swordsman)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">7 / 14 </div>
+  <img src="image7.jpg" style="width:100%">
+  <div class="text">Sogeking(Usopp) (Sniper)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">8 / 14 </div>
+  <img src="image8.jpg" style="width:100%">
+  <div class="text">Nami (Navigator)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">9 / 14 </div>
+  <img src="image9.jpg" style="width:100%">
+  <div class="text">Sanji (Cook)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">10 / 14 </div>
+  <img src="image10.jpg" style="width:100%">
+  <div class="text">Chopper (Doctor)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">11 / 14 </div>
+  <img src="image11.jpg" style="width:100%">
+  <div class="text">Nico Robin (Archeologist)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">12 / 14 </div>
+  <img src="image12.jpg" style="width:100%">
+  <div class="text">Franky (Shipwright)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">13 / 14 </div>
+  <img src="image13.jpg" style="width:100%">
+  <div class="text">Brook (Musician)</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">14 / 14 </div>
+  <img src="image14.jpg" style="width:100%">
+  <div class="text">Straw Hat Pirates Wanted Poster</div>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+  <span class="dot" onclick="currentSlide(6)"></span>
+  <span class="dot" onclick="currentSlide(7)"></span>
+  <span class="dot" onclick="currentSlide(8)"></span>
+  <span class="dot" onclick="currentSlide(9)"></span>
+  <span class="dot" onclick="currentSlide(10)"></span>
+  <span class="dot" onclick="currentSlide(11)"></span>
+  <span class="dot" onclick="currentSlide(12)"></span>
+  <span class="dot" onclick="currentSlide(13)"></span>
+  <span class="dot" onclick="currentSlide(14)"></span>
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html>
